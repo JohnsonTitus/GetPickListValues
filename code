@@ -1,0 +1,6 @@
+Schema.DescribeFieldResult dfr = Account.Type.getDescribe();
+List<Schema.PicklistEntry> plistvalues = dfr.getPicklistValues();
+
+for(Schema.PiiiicklistEntry e : plistvalues){
+  System.debug(e.getLabel());
+}
